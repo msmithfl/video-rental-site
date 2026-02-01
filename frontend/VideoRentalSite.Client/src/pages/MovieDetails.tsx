@@ -290,7 +290,7 @@ export default function MovieDetails() {
           <div className="border-t border-gray-800 p-8">
             <h3 className="text-gray-500 text-sm font-semibold mb-4">Cast</h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
-              {credits.cast.slice(0, 16).map((actor) => (
+              {credits.cast.slice(0, 8).map((actor) => (
                 <div key={actor.id} className="text-center">
                   <div className="bg-gray-800 rounded-lg overflow-hidden mb-2 aspect-2/3">
                     {actor.profile_path ? (
