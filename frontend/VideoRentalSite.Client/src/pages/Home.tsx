@@ -12,15 +12,14 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/70 z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-left relative z-20">
-            <div className="bg-[#202020] rounded-lg p-8 max-w-2xl shadow-2xl backdrop-blur-sm">
+            <div className="bg-[#202020] rounded-lg p-8 min-w-[20rem] max-w-2xl shadow-2xl backdrop-blur-sm">
               <h3 className="text-2xl font-semibold text-white mb-4">Pop-up Location</h3>
               <div className="text-gray-300 space-y-2">
-                <p className="text-lg">The Plaza at Boca Center</p>
-                <p className="text-lg">5050 Town Center Circle, Boca Raton, FL 33486</p>
+                <p className="text-lg">TBD</p>
                 <div className="mt-4 pt-4 border-t border-gray-700">
                   <p className="text-lg font-semibold text-white mb-2">Hours:</p>
                   <div className="grid grid-cols-2 gap-2 text-sm">
-                    <div>Saturday: 8pm - 5pm</div>
+                    <div>TBD</div>
                   </div>
                 </div>
               </div>
