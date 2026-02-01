@@ -17,7 +17,7 @@ export default function About() {
           <div className="mt-8 p-6 bg-gray-800 rounded-lg border border-gray-700">
             <h4 className="text-xl font-semibold text-white mb-2">Get in Touch</h4>
             <p className="text-gray-300">
-              Have questions or want to request a specific title? We'd love to hear from you!
+              Have questions or want to request a specific title?
             </p>
             <p className="text-blue-400 font-medium mt-2">
               Email: info@wilhelmsvideo.com
