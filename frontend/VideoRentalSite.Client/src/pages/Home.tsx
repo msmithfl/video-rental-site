@@ -8,7 +8,7 @@ export default function Home() {
         <img 
           src={`${import.meta.env.BASE_URL}wilhelm-scream-background.jpg`}
           alt="Video Collection" 
-          className="absolute inset-0 w-full h-full object-cover object-[calc(100%+375px)_center]"
+          className="absolute inset-0 w-full h-full object-cover object-[calc(100%+375px)_center] md:object-center"
         />
         <div className="absolute inset-0 bg-black/70 z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-left relative z-20">
