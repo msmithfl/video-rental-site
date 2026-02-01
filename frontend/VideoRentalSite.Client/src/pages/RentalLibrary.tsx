@@ -128,7 +128,7 @@ export default function RentalLibrary() {
           <div className="mb-4 text-gray-400">
             Showing {filteredMovies.length} {filteredMovies.length === 1 ? 'movie' : 'movies'}
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+          <div className="grid grid-cols-3 min-[400px]:grid-cols-4 min-[700px]:grid-cols-6 xl:grid-cols-8 gap-4">
             {filteredMovies.map((movie, index) => {
               const firstLetter = movie.title.charAt(0).toUpperCase();
               const isFirstOfLetter = index === 0 || 
