@@ -92,6 +92,10 @@ export default function MovieDetails() {
     if (!movie?.tmdbId) return;
     
     setLoadingTrailer(true);
+    
+    // Open window immediately for mobile compatibility
+    const newWindow = window.open('about:blank', '_blank');
+    
     try {
       const options = {
         method: 'GET',
@@ -112,14 +116,20 @@ export default function MovieDetails() {
         );
 
         if (trailer) {
-          // Open YouTube video in new tab
-          window.open(`https://www.youtube.com/watch?v=${trailer.key}`, '_blank');
+          // Navigate the already-opened window to YouTube
+          if (newWindow) {
+            newWindow.location.href = `https://www.youtube.com/watch?v=${trailer.key}`;
+          }
         } else {
+          // Close the blank window and show alert
+          if (newWindow) newWindow.close();
           alert('No trailer available for this movie.');
         }
       }
     } catch (error) {
       console.error('Error fetching trailer:', error);
+      // Close the blank window and show alert
+      if (newWindow) newWindow.close();
       alert('Failed to load trailer.');
     } finally {
       setLoadingTrailer(false);
