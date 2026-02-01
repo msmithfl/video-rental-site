@@ -12,5 +12,12 @@ export default defineConfig({
         secure: true,
       }
     }
+  },
+  preview: {
+    port: 5173,
+    strictPort: true,
+  },
+  build: {
+    outDir: 'dist',
   }
 })
