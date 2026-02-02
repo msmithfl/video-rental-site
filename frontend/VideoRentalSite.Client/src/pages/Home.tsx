@@ -17,7 +17,7 @@ export default function Home() {
               <div className="text-gray-300 space-y-2">
                 <p className="text-lg">TBD</p>
                 <div className="mt-4 pt-4 border-t border-gray-700">
-                  <p className="text-lg font-semibold text-white mb-2">Hours:</p>
+                  <p className="text-lg font-semibold text-white mb-2">Hours</p>
                   <div className="grid grid-cols-2 gap-2 text-sm">
                     <div>TBD</div>
                   </div>
